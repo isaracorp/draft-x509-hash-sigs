@@ -5,4 +5,4 @@ Do all work in draft-vangeest-x509-hash-sigs-working.xml, we'll copy it to draft
 
 Do not edit txt files directly, generate them from xml using xml2rfc.
 e.g.
-xml2rfc draft-vangeest-x509-hash-sigs-working.xml.xml -b draft-vangeest-x509-hash-sigs-working.xml --text
+xml2rfc draft-vangeest-x509-hash-sigs-working.xml -b . --text --html

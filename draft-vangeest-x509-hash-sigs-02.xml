@@ -28,7 +28,7 @@
 <?rfc compact="yes" ?> <!-- do not start each main section on a new page -->
 <?rfc subcompact="no" ?> <!-- keep one blank line between list items -->
 <!-- end of popular PIs -->
-<rfc  category="std" docName="draft-vangeest-x509-hash-sigs-03" ipr="trust200902">
+<rfc  category="std" docName="draft-vangeest-x509-hash-sigs-02" ipr="trust200902">
   <front>
     <title abbrev="Hash-Based Signatures for X.509">Algorithm Identifiers for HSS and XMSS for Use in the Internet X.509 Public Key Infrastructure</title>
     <author fullname="Daniel Van Geest" initials="D" surname="Van Geest">
@@ -263,6 +263,33 @@
           </artwork></figure>
         </t>
         <t>
+          The ASN.1 OIDs used to specify that an HSS signature was generated on a SHA-256, SHA-384 or SHA-512 hash of an object are, respectively:
+        </t>
+        <t>
+          <figure><artwork>
+   id-alg-hss-with-SHA256  OBJECT IDENTIFIER ::= { itu-t(0)
+      identified-organization(4) etsi(0) reserved(127)
+      etsi-identified-organization(0) isara(15) algorithms(1)
+      asymmetric(1) hss(12) 2 }
+          </artwork></figure>
+        </t>
+        <t>
+          <figure><artwork>
+   id-alg-hss-with-SHA384  OBJECT IDENTIFIER ::= { itu-t(0)
+      identified-organization(4) etsi(0) reserved(127)
+      etsi-identified-organization(0) isara(15) algorithms(1)
+      asymmetric(1) hss(12) 3 }
+          </artwork></figure>
+        </t>
+        <t>
+          <figure><artwork>
+   id-alg-hss-with-SHA512  OBJECT IDENTIFIER ::= { itu-t(0)
+      identified-organization(4) etsi(0) reserved(127)
+      etsi-identified-organization(0) isara(15) algorithms(1)
+      asymmetric(1) hss(12) 1 }
+          </artwork></figure>
+        </t>
+        <t>
           <xref target="I-D.ietf-lamps-cms-hash-sig"/> contains more information on the contents and format of an HSS signature.
         </t>
 
@@ -279,6 +306,33 @@
       identified-organization(4) etsi(0) reserved(127)
       etsi-identified-organization(0) isara(15) algorithms(1)
       asymmetric(1) xmss(13) 0 }
+          </artwork></figure>
+        </t>
+        <t>
+          The ASN.1 OIDs used to specify that an XMSS signature was generated on a SHA-256, SHA-384 or SHA-512 hash of an object are, respectively:
+        </t>
+        <t>
+          <figure><artwork>
+   id-alg-xmss-with-SHA256  OBJECT IDENTIFIER ::= { itu-t(0)
+      identified-organization(4) etsi(0) reserved(127)
+      etsi-identified-organization(0) isara(15) algorithms(1)
+      asymmetric(1) xmss(13) 2 }
+          </artwork></figure>
+        </t>
+        <t>
+          <figure><artwork>
+   id-alg-xmss-with-SHA384  OBJECT IDENTIFIER ::= { itu-t(0)
+      identified-organization(4) etsi(0) reserved(127)
+      etsi-identified-organization(0) isara(15) algorithms(1)
+      asymmetric(1) xmss(13) 3 }
+          </artwork></figure>
+        </t>
+        <t>
+          <figure><artwork>
+   id-alg-xmss-with-SHA512  OBJECT IDENTIFIER ::= { itu-t(0)
+      identified-organization(4) etsi(0) reserved(127)
+      etsi-identified-organization(0) isara(15) algorithms(1)
+      asymmetric(1) xmss(13) 1 }
           </artwork></figure>
         </t>
         <t>
